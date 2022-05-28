@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { faker } from 'https://esm.sh/@faker-js/faker';
 
 class Controls extends Component {
 

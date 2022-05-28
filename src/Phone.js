@@ -3,7 +3,6 @@ import Controls from './Controls';
 import Dashboard from './Dashboard';
 import UserCard from './UserCard';
 import { users } from './assets/MOCK_DATA';
-import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
 class Phone extends Component {
     constructor(props){
