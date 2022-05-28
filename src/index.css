@@ -78,6 +78,7 @@ max-height: 455px;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  overflow: hidden;
 }
 
 .dash{
@@ -96,7 +97,7 @@ max-height: 455px;
 
 .swipe{
   animation-name: swipe;
- animation-duration: 1s;
+ animation-duration: 0.3s;
 animation-iteration-count: 1;
 /* animation-timing-function:linear; */
 /* animation-fill-mode: forwards; */
@@ -108,7 +109,7 @@ overflow: hidden;
     transform: rotate(0deg) skew(0deg) ;
   }
   to{
-    transform: rotate(10deg) skew(0deg);
+    transform: rotate(18deg) skew(0deg) translateX(500px);
   }
 }
 
@@ -121,21 +122,3 @@ img{
 }
 
 
-
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}
