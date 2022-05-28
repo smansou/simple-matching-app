@@ -11,3 +11,131 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 670px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  /* width: 360px;
+  height: 640px; */
+  background: white;
+}
+
+.ui.cards{
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  
+}
+.ui.cards>.card{
+max-height: 455px;  
+}
+
+.btn-container{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+.contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.dash{
+  height: 50px;
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ui.segment{
+  padding-top: 15px;
+  margin: 0;
+}
+
+
+
+.swipe{
+  animation-name: swipe;
+ animation-duration: 1s;
+animation-iteration-count: 1;
+/* animation-timing-function:linear; */
+/* animation-fill-mode: forwards; */
+overflow: hidden;
+}
+
+@keyframes swipe{
+  from{
+    transform: rotate(0deg) skew(0deg) ;
+  }
+  to{
+    transform: rotate(10deg) skew(0deg);
+  }
+}
+
+.card-container{
+  overflow: hidden;
+}
+
+img{
+  max-height: 280px;
+}
+
+
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
